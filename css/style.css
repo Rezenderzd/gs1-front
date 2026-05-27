@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --background-color: #05070a;
+    --ciano:#00f0ff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: "Space Grotesk", sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 5%;
+    color: var(--ciano);
+}
+
+header div{
+    display: flex;
+    gap: 20px;
+}
+
+hr{
+    background-color: #161b22;
+    height: 2px;
+    border: none;
+    margin: 0;
+}
+
+h2{
+    color: var(--ciano);
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-principal{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+    margin-inline: 6%;
+}
+
+.section-imagem{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 1000px;
+    border-radius: 10px;
+
+}
+
+.titulo-atualizar-info{
+    color: var(--ciano);
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+label{
+    color: var(--ciano);
+    font-size: 20px;
+}
+
+#nome, #status, #novo-valor{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #161b22;
+    color: var(--ciano);
+}
+
+#btn-atualizar{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--ciano);
+    color: var(--background-color);
+    font-weight: bold;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 50%;
+}
+
+.informacoes-atualizadas-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0;
+}
+
+.informacoes-atualizadas-section h3{
+    color: var(--ciano);
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+#texto-atualiza-por{
+    display: none;
+    color: var(--ciano);
+    margin: 0;
+}
+
+.informacoes-atualizadas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.informacoes-div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: var(--ciano);
+    background-color: #161b22;
+    gap: 10px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.informacoes-div p{
+    margin: 0;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1500px) {
+    .section-principal{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    img{
+        width: 90%;
+    }
+
+    .informacoes-atualizadas-section{
+        width: 100%;
+    }
+
+    .informacoes-atualizadas-section h3{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .informacoes-div{
+        width: 90%;
+    }
+
+    form{
+        width: 90%;
+    }
+
+    #btn-atualizar{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header div{
+        justify-content: center;
+    }
+    
+    .titulo-atualizar-info{
+        font-size: 20px;
+    }
+
+    label{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Orbital Comand</h1>
+        <div>
+            <a>Inicio</a>
+            <a>Sobre</a>
+            <a>Contatos</a>
+        </div>
+    </header>
+    <hr>
+    <h2>Sistema de telemetria</h2>
+    <main>
+        <section class="section-principal">
+            <section class="section-imagem">
+                <img src="img/imagem-universo.jpg" alt="imagem espacial">
+            </section>
+            <section class="informacoes-atualizadas-section">
+                <h3>Informações atuais</h3>
+                <p id="texto-atualiza-por">Atualizado por: </p>
+                <div class="informacoes-atualizadas">
+                    <div class="informacoes-div">
+                        <p>Temperatura</p>
+                        <p id="temperatura">25ºC</p>
+                    </div>
+                    <div class="informacoes-div">
+                        <p>Pressão</p>
+                        <p id="pressao">1 atm</p>
+                    </div>
+                    <div class="informacoes-div">
+                        <p>Radiação</p>
+                        <p id="radiacao">0.5 mSv/h</p>
+                    </div>
+                    <div class="informacoes-div">
+                        <p>Porcentagem de combustivel</p>
+                        <p id="nivel-combustivel">100%</p>
+                    </div>
+                    <div class="informacoes-div">
+                        <p>Tempo estimado da missão</p>
+                        <p id="quantidade-dias">10 dias</p>
+                    </div>
+                    <div class="informacoes-div">
+                        <p>Número de tripulantes</p>
+                        <p>3</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <section>
+            <h4 class="titulo-atualizar-info">Atualize as informações se necessário</h4>
+            <form>
+                <label for="nome">Nome funcionário</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome do funcionário">
+                <label for="status">Opção que deseja alterar</label>
+                <select id="status" name="status">
+                    <option value="temperatura">Temperatura</option>
+                    <option value="pressao">Pressão</option>
+                    <option value="radiacao">Radiação</option>
+                    <option value="combustivel">Porcentagem de combustivel</option>
+                    <option value="tempo-missao">Tempo estimado da missão</option>
+                </select>
+                <label for="novo-valor">Digite o novo valor</label>
+                <input type="number" id="novo-valor" name="novo-valor" placeholder="Digite o novo valor">
+            </form>
+            <button id="btn-atualizar">Atualizar</button>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
